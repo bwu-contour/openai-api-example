@@ -4,3 +4,4 @@ uvicorn
 requests
 pytest
 pytest-repeat
+pytest-html
