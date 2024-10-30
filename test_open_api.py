@@ -10,9 +10,10 @@ def test_generate_snippet_keywords():
         response = requests.get(ENDPOINT + "/generate_snippet_and_keywords?prompt=JPMorgan%20Chase", verify=False)
     else:
         response = requests.get(ENDPOINT + "/generate_snippet_and_keywords?prompt=JPMorgan%20Chase")
-    assert response.status_code == 200
     
     print("This request is being served by server: " + platform.node())
     
     #data = response.json();
     #print(data)
+
+    assert response.status_code == 200
